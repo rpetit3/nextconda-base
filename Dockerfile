@@ -27,7 +27,4 @@ RUN cd /tmp \
     && mv nextflow /usr/local/bin \
     && chmod 755 /usr/local/bin/nextflow
 
-# see https://blogs.oracle.com/java-platform-group/java-se-support-for-docker-cpu-and-memory-limits
-ENV NXF_OPTS='-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap'
-
 CMD ["nextflow"]
