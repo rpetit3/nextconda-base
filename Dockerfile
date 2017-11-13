@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 MAINTAINER robbie.petit@gmail.com
 
 # Bioconda
-RUN cd /tmp/
+RUN cd /tmp/ \
     && apt-get -qq update 
     && apt-get -qq -y --no-install-recommends install curl bzip2 \
     && curl -sSL https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -o /tmp/miniconda.sh \
