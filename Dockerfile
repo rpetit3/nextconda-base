@@ -14,7 +14,7 @@ RUN cd /tmp/ \
     && conda config --add channels defaults \
     && conda config --add channels conda-forge \
     && conda config --add channels bioconda \
-    && conda install -y java-jdk
+    && conda install -y java-jdk \
     && curl -s https://get.nextflow.io | bash \
     && mv nextflow /usr/local/bin \
     && chmod 755 /usr/local/bin/nextflow \
